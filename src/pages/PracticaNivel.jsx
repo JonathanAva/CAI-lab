@@ -1,12 +1,11 @@
-// PracticaNivel.jsx
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 import { Container, Typography, Box, Button, TextField, Card, CardContent, CardActions, Modal } from "@mui/material";
-import { CheckCircleOutline } from "@mui/icons-material"; // Importamos el icono de verificación
+import { CheckCircleOutline } from "@mui/icons-material"; 
 import Navbar from "../components/Navbar";
-import happyFace from "../assets/happy_face.jpg"; // Imagen de carita feliz
-import studying from "../assets/studying.jpg"; // Imagen de estudiando
-import fondo from "../assets/fondo.jpg"; // Imagen de fondo
+import happyFace from "../assets/happy_face.jpg"; 
+import studying from "../assets/studying.jpg"; 
+import fondo from "../assets/fondo.jpg"; 
 
 const randomOrder = (start, end, numQuestions) => {
   const nums = [];
@@ -44,7 +43,7 @@ const PracticaNivel = () => {
     } else {
       start = 9; end = 11;
     }
-    setOrder(randomOrder(start, end, 6)); // Generamos 6 preguntas
+    setOrder(randomOrder(start, end, 6)); 
   }, [nivel]);
 
   const handleAnswerChange = (num, value) => {
@@ -121,7 +120,6 @@ const PracticaNivel = () => {
         </Container>
       </Box>
 
-      {/* Modal */}
       <Modal open={modalOpen} onClose={handleCloseModal}>
         <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", backgroundColor: "white", borderRadius: "10px", boxShadow: 3, padding: 4, width: 300, margin: "auto", mt: 10 }}>
           <img src={modalContent.image} alt="Resultado" style={{ width: "100px", marginBottom: "20px" }} />

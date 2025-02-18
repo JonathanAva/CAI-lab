@@ -1,8 +1,8 @@
 import { Container, Typography, Button, Box, Grid, Card, CardMedia } from "@mui/material";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/Navbar"; // Importamos la Navbar
+import Navbar from "../components/Navbar"; 
 import bannerImg from "../assets/banner.png"; 
-import tabla1 from "../assets/tabla1.jpg"; // Importa las imágenes de las tablas
+import tabla1 from "../assets/tabla1.jpg"; 
 import tabla2 from "../assets/tabla2.jpg";
 import tabla3 from "../assets/tabla3.jpg";
 import tabla4 from "../assets/tabla4.jpg";
@@ -35,7 +35,7 @@ const Home = () => {
 
   return (
     <>
-      <Navbar /> {/* Agregamos la Navbar */}
+      <Navbar /> 
 
       <Box sx={{ width: "100vw", minHeight: "100vh", textAlign: "center", paddingTop: "64px" }}>
         <Box

@@ -1,4 +1,3 @@
-// Practica.jsx
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Container, Typography, Box, Button, TextField, Card, CardContent, CardActions, Modal } from "@mui/material";
@@ -103,7 +102,7 @@ const Practica = () => {
         </Container>
       </Box>
 
-      {/* Modal */}
+      
       <Modal open={modalOpen} onClose={handleCloseModal}>
         <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", backgroundColor: "white", borderRadius: "10px", boxShadow: 3, padding: 4, width: 300, margin: "auto", mt: 10 }}>
           <img src={modalContent.image} alt="Resultado" style={{ width: "100px", marginBottom: "20px" }} />
